@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: course-epr-system
+  datasource:
+    url: jdbc:postgresql://localhost:5432/course_epr_system
+    username: postgres
+    password: 2901
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold:  10KB
+      max-file-size:  200MB
+      max-request-size: 215MB
+
+file:
+  upload-dir: C:\JAVA\TAKRORLASH\projects_for_lesson\course-epr-system\src\main\resources\uploads
+
+jwt:
+  expiry: 300000
+  secret: fjvhdjfvhorffdjvfjbjspoefi0regjiofvhjdfvbjkfjsdklfoperjefivbdfnvsdmop
